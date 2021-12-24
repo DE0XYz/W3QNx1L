@@ -44,7 +44,7 @@ getgenv().Aiming = {
 
     VisibleCheck = true,
     
-    HitChance = 165,
+    HitChance = 155,
 
     Selected = LowerTorso,
     SelectedPart = LowerTorso,
