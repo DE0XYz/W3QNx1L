@@ -1,7 +1,4 @@
 if getgenv().Aiming then return getgenv().Aiming end
---Settings
-getgenv().ToggleKey = "q" --Must be lowercase
-getgenv().Notifications = true --True = notifications, False = no notifications
 
 -- // Services
 local Players = game:GetService("Players")
