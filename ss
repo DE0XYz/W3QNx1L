@@ -38,15 +38,15 @@ getgenv().Aiming = {
     Enabled = true,
 
     ShowFOV = false,
-    FOV = 10,
-    FOVSides = 12,
+    FOV = 6,
+    FOVSides = 500,
     FOVColour = Color3fromRGB(231, 84, 128),
 
     VisibleCheck = true,
     
-    HitChance = 103,
+    HitChance = 100,
 
-    Selected = LowerTorso,
+    Selected = Head,
     SelectedPart = LowerTorso,
 
     TargetPart = {"LowerTorso", "LowerTorso"},
