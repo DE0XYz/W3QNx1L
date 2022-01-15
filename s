@@ -1,4 +1,4 @@
-if getgenv().Aiming then return getgenv().Aiming end
+f getgenv().Aiming then return getgenv().Aiming end
 
 -- // Services
 local Players = game:GetService("Players")
@@ -37,19 +37,19 @@ local tableinsert = table.insert
 getgenv().Aiming = {
     Enabled = true,
 
-    ShowFOV = false,
-    FOV = 9.88,
-    FOVSides = 12,
-    FOVColour = Color3fromRGB(231, 84, 128),
+    ShowFOV = true,
+    FOV = 13,
+    FOVSides = 500,
+    FOVColour = Color3fromRGB(21, 24, 58),
 
     VisibleCheck = true,
     
-    HitChance = 124,
+    HitChance = 100,
 
-    Selected = LowerTorso,
+    Selected = Head,
     SelectedPart = LowerTorso,
 
-    TargetPart = {"LowerTorso", "LowerTorso"},
+    TargetPart = {"LowerTorso", "Head"},
 
     Ignored = {
         Teams = {
@@ -69,7 +69,7 @@ local Aiming = getgenv().Aiming
 -- // Create circle
 local circle = Drawingnew("Circle")
 circle.Transparency = 1
-circle.Thickness = 2
+circle.Thickness = 0.1
 circle.Color = Aiming.FOVColour
 circle.Filled = false
 Aiming.FOVCircle = circle
