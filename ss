@@ -1,4 +1,4 @@
-if getgenv().Aiming then return getgenv().Aiming end
+vif getgenv().Aiming then return getgenv().Aiming end
 
 -- // Services
 local Players = game:GetService("Players")
@@ -38,7 +38,7 @@ getgenv().Aiming = {
     Enabled = true,
 
     ShowFOV = false,
-    FOV = 6,
+    FOV = 30,
     FOVSides = 500,
     FOVColour = Color3fromRGB(231, 84, 128),
 
@@ -46,10 +46,10 @@ getgenv().Aiming = {
     
     HitChance = 100,
 
-    Selected = Head,
+    Selected = nil,
     SelectedPart = LowerTorso,
 
-    TargetPart = {"LowerTorso", "LowerTorso"},
+    TargetPart = {"LowerTorso", "UpperTorso"},
 
     Ignored = {
         Teams = {
